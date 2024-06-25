@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Open Cart Test Regression Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.qa.opencart.listeners.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="3" verbose="0" name="Open cart Account Page Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.qa.opencart.tests.AccountPageTest">
+        <methods>
+          <include name="accountTitlrTest"/>
+          <include name="footerLinkAllList"/>
+          <include name="getPageUrlTest"/>
+          <include name="searchBoxPresent"/>
+          <include name="addToCartButtonPresent"/>
+          <include name="getMyAccountPresent"/>
+          <include name="getcontentMainHeaderList"/>
+          <include name="userLogOutPage"/>
+          <include name="setup"/>
+          <include name="accountSetup"/>
+          <include name="LogoutLinkPresent"/>
+          <include name="homePageHeader"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.AccountPageTest -->
+    </classes>
+  </test> <!-- Open cart Account Page Test(failed) -->
+  <test thread-count="3" verbose="0" name="Open cart Login Page Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.qa.opencart.tests.LoginPageTest">
+        <methods>
+          <include name="verifyRegisterFieldIsPresent"/>
+          <include name="verifyFailTest"/>
+          <include name="verifyLoginPageTitle"/>
+          <include name="verifyLoginLinkIsPresent"/>
+          <include name="verifyEmailAddressFieldIsPresent"/>
+          <include name="verifyLoginPageUrl"/>
+          <include name="verifySearchBoxIsPresent"/>
+          <include name="setup"/>
+          <include name="verifyPasswordFieldIsPresent"/>
+          <include name="verifyReturningCustomerTextIsPresent"/>
+          <include name="verifySuccessfulLogin"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Open cart Login Page Test(failed) -->
+  <test thread-count="3" verbose="0" name="Open cart Search Result PageTest(failed)" parallel="tests">
+    <classes>
+      <class name="com.qa.opencart.tests.SearchResultPageTest">
+        <methods>
+          <include name="productInfoTest"/>
+          <include name="productDtaTest"/>
+          <include name="setup"/>
+          <include name="imagesCountTest"/>
+          <include name="ProductDesc"/>
+          <include name="doSearch"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.SearchResultPageTest -->
+    </classes>
+  </test> <!-- Open cart Search Result PageTest(failed) -->
+  <test thread-count="3" verbose="0" name="Open cart Register Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.qa.opencart.tests.RegisterTest">
+        <methods>
+          <include name="setup"/>
+          <include name="userRegisterTest"/>
+          <include name="regSetup"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.RegisterTest -->
+    </classes>
+  </test> <!-- Open cart Register Test(failed) -->
+</suite> <!-- Failed suite [Open Cart Test Regression Suite] -->
